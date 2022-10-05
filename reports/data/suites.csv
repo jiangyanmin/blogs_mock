@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Thu Oct 06 00:13:57 CST 2022","Thu Oct 06 00:13:57 CST 2022","0","testcase","test_blogs_mock","TestCnblogs","","","test_02_login[密码错误，登录失败]",""
+"passed","Thu Oct 06 00:13:57 CST 2022","Thu Oct 06 00:13:57 CST 2022","1","testcase","test_blogs_mock","TestCnblogs","","","test_01_login[用户名和密码正确，登录成功]",""
+"passed","Thu Oct 06 00:13:57 CST 2022","Thu Oct 06 00:13:57 CST 2022","0","testcase","test_blogs_mock","TestCnblogs","","","test_04_login[请求方法错误，登录失败]",""
+"passed","Thu Oct 06 00:13:57 CST 2022","Thu Oct 06 00:13:57 CST 2022","0","testcase","test_blogs_mock","TestCnblogs","","","test_03_login[用户名不存在，登录失败]",""

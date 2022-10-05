@@ -1,0 +1,51 @@
+# 登录接口
+- #用例编号 test_01_login
+ describe: "用户名和密码正确，登录成功"
+ method: &method  "post"
+ url: &url  "http://127.0.0.1:8888/login"
+ headers:
+    content-type: &content-type 'application/json'
+ data:
+    name: 'Millie'
+    password: '123456'
+ res:
+   status_code: 200
+   name: 'Millie'
+   password: '123456'
+- #用例编号 test_02_login
+  describe: "密码错误，登录失败"
+  method: *method
+  url: *url
+  headers:
+    content-type: *content-type
+  data:
+    name: 'Millie'
+    password: '123'
+  res:
+    status_code: 400
+    msg: '用户名或密码错误！'
+- #用例编号 test_03_login
+  describe: "用户名不存在，登录失败"
+  method: *method
+  url: *url
+  headers:
+    content-type: *content-type
+  data:
+    name: 'Jack'
+    password: '123456'
+  res:
+    status_code: 400
+    msg: '用户名或密码错误！'
+- #用例编号 test_04_login
+  describe: "请求方法错误，登录失败"
+  method: "get"
+  url: *url
+  headers:
+    content-type: *content-type
+  data:
+    name: 'Millie'
+    password: '123456'
+  res:
+    status_code: 405
+
+
