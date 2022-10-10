@@ -1,0 +1,93 @@
+2022-10-06 19:57:12,628  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 19:57:12,637  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  63  INFO  测试用例：test_02_login，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 19:57:12,655  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  127  INFO  测试用例全部执行结束
+2022-10-06 19:58:21,770  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 19:58:21,773  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  49  INFO  assert 200 == 500
+ +  where 200 = <Response [200]>.status_code
+2022-10-06 19:58:21,785  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  63  INFO  测试用例：test_02_login，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 19:58:21,803  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  127  INFO  测试用例全部执行结束
+2022-10-06 20:00:39,217  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:00:39,403  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  63  INFO  测试用例：test_02_login，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:00:39,422  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  127  INFO  测试用例全部执行结束
+2022-10-06 20:01:13,710  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:01:13,712  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  49  CRITICAL  assert 200 == 500
+ +  where 200 = <Response [200]>.status_code
+2022-10-06 20:01:13,722  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  63  INFO  测试用例：test_02_login，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:01:13,738  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  127  INFO  测试用例全部执行结束
+2022-10-06 20:01:42,424  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:01:42,427  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  49  ERROR  assert 200 == 500
+ +  where 200 = <Response [200]>.status_code
+2022-10-06 20:01:42,438  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  63  INFO  测试用例：test_02_login，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:01:42,454  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  127  INFO  测试用例全部执行结束
+2022-10-06 20:04:28,824  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:04:28,827  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  50  ERROR  测试用例：test_01_login执行失败assert 200 == 500
+ +  where 200 = <Response [200]>.status_code
+2022-10-06 20:04:28,836  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  64  INFO  测试用例：test_02_login，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:04:28,852  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  128  INFO  测试用例全部执行结束
+2022-10-06 20:04:58,846  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:04:58,848  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  50  ERROR  测试用例：test_01_login执行失败：assert 200 == 500
+ +  where 200 = <Response [200]>.status_code
+2022-10-06 20:04:58,856  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  64  INFO  测试用例：test_02_login，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:04:58,872  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  128  INFO  测试用例全部执行结束
+2022-10-06 20:06:19,191  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:06:19,193  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  50  ERROR  测试用例：test_01_login执行失败：assert 200 == 400
+ +  where 200 = <Response [200]>.status_code
+2022-10-06 20:06:19,201  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  64  INFO  测试用例：test_02_login，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:06:19,215  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  128  INFO  测试用例全部执行结束
+2022-10-06 20:07:04,541  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:07:04,543  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  47  INFO  用例test_01_login执行成功，状态码：200，响应内容：{'name': 'Millie', 'password': '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'access_token': '25d55ad283aa400af464c76d713c07ad'}
+2022-10-06 20:07:04,551  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  64  INFO  测试用例：test_02_login，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:07:04,568  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  128  INFO  测试用例全部执行结束
+2022-10-06 20:09:47,107  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:09:47,109  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  52  ERROR  用例test_01_login执行失败：'dict' object has no attribute 'encode'
+2022-10-06 20:09:47,118  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  66  INFO  测试用例：test_02_login，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:09:47,133  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  130  INFO  测试用例全部执行结束
+2022-10-06 20:10:51,181  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:10:51,183  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  47  INFO  用例test_01_login执行成功，状态码：200，响应内容：4af2594f719117be5e47a761dd60db1925c0592e372c45aa1901cda2e13e7fdd
+2022-10-06 20:10:51,192  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  66  INFO  测试用例：test_02_login，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:10:51,208  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  130  INFO  测试用例全部执行结束
+2022-10-06 20:15:18,791  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:15:18,793  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  47  INFO  test_01_login用例执行成功，状态码：200，响应内容：4af2594f719117be5e47a761dd60db1925c0592e372c45aa1901cda2e13e7fdd
+2022-10-06 20:15:18,801  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  65  INFO  test_02_login用例执行成功，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:15:18,809  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  81  INFO  test_03_login用例执行成功，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:15:18,816  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  99  ERROR  test_04_login用例执行失败：Expecting value: line 1 column 1 (char 0)
+2022-10-06 20:15:18,817  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  137  INFO  测试用例全部执行结束
+2022-10-06 20:19:46,525  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:19:46,527  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  47  INFO  test_01_login用例执行成功，状态码：200，响应内容：4af2594f719117be5e47a761dd60db1925c0592e372c45aa1901cda2e13e7fdd
+2022-10-06 20:19:46,534  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  65  INFO  test_02_login用例执行成功，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:19:46,543  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  81  INFO  test_03_login用例执行成功，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:19:46,551  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  137  INFO  测试用例全部执行结束
+2022-10-06 20:20:26,759  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:20:26,761  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  47  INFO  test_01_login用例执行成功，状态码：200，响应内容：4af2594f719117be5e47a761dd60db1925c0592e372c45aa1901cda2e13e7fdd
+2022-10-06 20:20:26,770  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  65  INFO  test_02_login用例执行成功，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:20:26,778  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  81  INFO  test_03_login用例执行成功，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:20:26,786  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  97  INFO  test_04_login用例执行成功，状态码：405，响应内容：jj
+2022-10-06 20:20:26,787  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  137  INFO  测试用例全部执行结束
+2022-10-06 20:22:12,460  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:22:12,461  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  28  INFO  用例开始执行
+2022-10-06 20:22:12,463  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  47  INFO  test_01_login用例执行成功，状态码：200，响应内容：4af2594f719117be5e47a761dd60db1925c0592e372c45aa1901cda2e13e7fdd
+2022-10-06 20:22:12,464  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  134  INFO  用例执行结束
+2022-10-06 20:22:12,471  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  28  INFO  用例开始执行
+2022-10-06 20:22:12,473  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  65  INFO  test_02_login用例执行成功，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:22:12,474  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  134  INFO  用例执行结束
+2022-10-06 20:22:12,483  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  28  INFO  用例开始执行
+2022-10-06 20:22:12,484  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  81  INFO  test_03_login用例执行成功，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:22:12,485  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  134  INFO  用例执行结束
+2022-10-06 20:22:12,493  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  28  INFO  用例开始执行
+2022-10-06 20:22:12,494  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  97  INFO  test_04_login用例执行成功，状态码：405
+2022-10-06 20:22:12,495  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  134  INFO  用例执行结束
+2022-10-06 20:22:12,496  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  137  INFO  测试用例全部执行结束
+2022-10-06 20:23:04,559  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  25  INFO  测试用例开始执行
+2022-10-06 20:23:04,560  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  28  INFO  用例开始执行......
+2022-10-06 20:23:04,562  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  47  INFO  test_01_login用例执行成功，状态码：200，响应内容：4af2594f719117be5e47a761dd60db1925c0592e372c45aa1901cda2e13e7fdd
+2022-10-06 20:23:04,563  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  134  INFO  用例执行结束......
+2022-10-06 20:23:04,572  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  28  INFO  用例开始执行......
+2022-10-06 20:23:04,573  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  65  INFO  test_02_login用例执行成功，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:23:04,574  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  134  INFO  用例执行结束......
+2022-10-06 20:23:04,581  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  28  INFO  用例开始执行......
+2022-10-06 20:23:04,582  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  81  INFO  test_03_login用例执行成功，状态码：400，响应内容：{'msg': '用户名或密码错误！'}
+2022-10-06 20:23:04,583  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  134  INFO  用例执行结束......
+2022-10-06 20:23:04,590  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  28  INFO  用例开始执行......
+2022-10-06 20:23:04,591  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  97  INFO  test_04_login用例执行成功，状态码：405
+2022-10-06 20:23:04,592  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  134  INFO  用例执行结束......
+2022-10-06 20:23:04,593  D:\PycharmProjects\blogs_mock\testcase\test_blogs_mock.py  test_blogs_mock  137  INFO  测试用例全部执行结束

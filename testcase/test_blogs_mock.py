@@ -10,28 +10,22 @@ import hashlib
 import pytest
 import os
 import json
+import sys
 
-from common.request_util import AllRequestMethod as qm
 from common.extract_util import ExtractUtil
+from common.log_util import *
 
 yaml_extract = ExtractUtil(os.getcwd() + '/common/extract_dynamic_util.yaml')  # 获取动态参数
 login_cases = ExtractUtil(os.getcwd() + '/data/login_case.yaml').read_case_yaml()  # 获取登录接口测试用例数据
+logger = log_util('run.log')
 
 
 class TestCnblogs:
     def setup_class(self):
-        print('测试用例开始执行')
+        logger.info('测试用例开始执行******')
 
-    @pytest.fixture()
-    def send(self, request):   # request.param是pytest内request传参固定用法，用于接收传入的值并调用
-        method = request.param[0]
-        url = request.param[1]
-        data = request.param[2]
-        headers = request.param[3]
-        # print(method)  # post
-        res = qm().request_method(method=method, url=url, json=data, headers=headers)  #
-        # return json.loads(json.dumps(res).replace(r'\\', '\\'))  #, data, headers
-        return res
+    def setup(self):
+        logger.info('用例开始执行......')
 
     @pytest.mark.smoke
     @pytest.mark.parametrize('send',
@@ -40,14 +34,21 @@ class TestCnblogs:
                              ids=[login_cases[0]["describe"]],
                              indirect=True)
     def test_01_login(self, send):
-        res = send
-        # 获取access_token
-        access_token = res.json().get("access_token")
-        # 将access_token写入yaml文件
-        yaml_extract.write_yaml({"access_token": access_token})
-        assert res.status_code == login_cases[0]['res']['status_code']
-        assert res.json().get("name") == login_cases[0]['res']['name']
-        assert res.json().get("password") == hashlib.sha256(login_cases[0]['res']['password'].encode('utf-8')).hexdigest()
+        try:
+            res = send
+            # 获取access_token
+            access_token = res.json().get("access_token")
+            # 将access_token写入yaml文件
+            yaml_extract.write_yaml({"access_token": access_token})
+
+            assert res.status_code == login_cases[0]['res']['status_code']
+            assert res.json().get("name") == login_cases[0]['res']['name']
+            assert res.json().get("password") == hashlib.sha256(login_cases[0]['res']['password'].encode('utf-8')).hexdigest()
+            logger.info('{}用例执行成功，状态码：{}，响应内容：{}'.format(sys._getframe().f_code.co_name,
+                                                         res.status_code,
+                                                         hashlib.sha256(str(res.json()).encode('utf-8')).hexdigest()))
+        except Exception as ex:
+            logger.error('{}用例执行失败：{}'.format(sys._getframe().f_code.co_name, ex))
 
     @pytest.mark.smoke
     @pytest.mark.parametrize('send',
@@ -56,10 +57,14 @@ class TestCnblogs:
                              ids=[login_cases[1]["describe"]],
                              indirect=True)
     def test_02_login(self, send):
-        res = send
-        # print(res.json())
-        assert res.status_code == login_cases[1]["res"]["status_code"]
-        assert res.json()['msg'] == login_cases[1]["res"]['msg']
+        try:
+            res = send
+            # print(res.json())
+            assert res.status_code == login_cases[1]["res"]["status_code"]
+            assert res.json()['msg'] == login_cases[1]["res"]['msg']
+            logger.info('{}用例执行成功，状态码：{}，响应内容：{}'.format(sys._getframe().f_code.co_name, res.status_code, res.json()))
+        except Exception as ex:
+            logger.error('{}用例执行失败：{}'.format(sys._getframe().f_code.co_name, ex))
 
     @pytest.mark.smoke
     @pytest.mark.parametrize('send',
@@ -68,10 +73,14 @@ class TestCnblogs:
                              ids=[login_cases[2]["describe"]],
                              indirect=True)
     def test_03_login(self, send):
-        res = send
-        # print(res.json())
-        assert res.status_code == login_cases[2]["res"]["status_code"]
-        assert res.json()['msg'] == login_cases[2]["res"]['msg']
+        try:
+            res = send
+            # print(res.json())
+            assert res.status_code == login_cases[2]["res"]["status_code"]
+            assert res.json()['msg'] == login_cases[2]["res"]['msg']
+            logger.info('{}用例执行成功，状态码：{}，响应内容：{}'.format(sys._getframe().f_code.co_name, res.status_code, res.json()))
+        except Exception as ex:
+            logger.error('{}用例执行失败：{}'.format(sys._getframe().f_code.co_name, ex))
 
     @pytest.mark.smoke
     @pytest.mark.parametrize('send',
@@ -80,10 +89,14 @@ class TestCnblogs:
                              ids=[login_cases[3]["describe"]],
                              indirect=True)
     def test_04_login(self, send):
-        res = send
-        print(res.status_code)
-        assert res.status_code == login_cases[3]["res"]["status_code"]
-        # assert res.json() == {'msg': '找不到资源！'}11
+        try:
+            res = send
+            # print(res.status_code)
+            assert res.status_code == login_cases[3]["res"]["status_code"]
+            # assert res.json() == {'msg': '找不到资源！'}
+            logger.info('{}用例执行成功，状态码：{}'.format(sys._getframe().f_code.co_name, res.status_code))
+        except Exception as ex:
+            logger.error('{}用例执行失败：{}'.format(sys._getframe().f_code.co_name, ex))
 
     # @pytest.mark.smoke
     # @pytest.mark.parametrize("send",
@@ -117,8 +130,10 @@ class TestCnblogs:
     #     else:
     #         assert res.status_code == 500
     #         assert res.json() == {'msg': '未知异常！'}
+    def teardown(self):
+        logger.info('用例执行结束......')
 
     def teardown_class(self):
-        print('测试用例全部执行结束')
+        logger.info('测试用例全部执行结束******')
 
 

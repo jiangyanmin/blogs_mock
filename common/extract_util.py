@@ -40,8 +40,8 @@ class ExtractUtil:
 
 
 # if __name__=='__main__':
-#     s = ExtractUtil(os.getcwd() + '/extract_dynamic_util.yaml')  #/testcase/mock_yamls
-#     print(s.read_yaml())
-#     print(type(s.read_yaml()))
-
+#     s = ExtractUtil('D:\\PycharmProjects\\blogs_mock\\data\\login_case.yaml')  #/testcase/mock_yamls
+#     print(s.read_case_yaml()[0]['res']['status_code'])
+#
+#
 
